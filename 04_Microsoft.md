@@ -215,7 +215,42 @@ timeline
     2024-04 : Copilot Workspace 発表
     2024-10 : Copilot Edits 追加
     2025-01 : マルチファイル編集強化
+    2025-05 : Build 2025 - Agent Mode、オープンソース化発表
+    2025-09 : Code Review GA、Next Edit機能追加
 ```
+
+### Microsoft Build 2025 の重大発表（2025年5月）
+
+#### VS CodeでのGitHub Copilotオープンソース化
+Microsoftは、Visual Studio CodeにおけるGitHub Copilotの実装をオープンソース化すると発表。透明性とコミュニティ協力への大きな転換。
+
+#### Agent Mode（エージェントモード）
+開発者は複数の開発タスクをGitHub Copilotエージェントに割り当て可能：
+- **自律的なコードリファクタリング**
+- **テストカバレッジ向上**
+- **不具合修正**
+- **新機能実装**
+
+現在VS CodeとVisual Studioでプレビュー中。JetBrains、Eclipse、Xcodeにも近日対応予定。
+
+#### App Modernization（アプリモダナイゼーション）
+Javaおよび.NETアプリのモダナイゼーション機能：
+- **コード評価**
+- **修正提案**
+- **数千ファイルにわたる設定管理**
+
+複雑で時間のかかるタスクをオフロードして、アプリを迅速に更新・アップグレード・モダナイズ。
+
+#### PostgreSQLサポート
+VS Code用PostgreSQL拡張機能（プレビュー）がGitHub Copilotと統合。開発環境で直接PostgreSQLのAIアシスタンスとデータベースコンテキストを利用可能。
+
+### 2025年9月の機能追加
+
+#### コードレビュー機能（GA）
+C#、Go、Java、JavaScript、Markdown、Python、Ruby、TypeScriptに対応したコードレビュー機能が正式リリース。
+
+#### Next Edit（次の編集予測）
+コード変更中に次の修正を予測する機能を導入。
 
 ### 主な機能
 
@@ -415,27 +450,52 @@ flowchart TD
     A[Copilot Studio] --> B[ビジュアル設計]
     A --> C[データ接続]
     A --> D[デプロイ]
+    A --> E[Computer Use<br/>NEW!]
 
-    B --> E[会話フロー作成]
-    B --> F[トピック設計]
+    B --> F[会話フロー作成]
+    B --> G[トピック設計]
 
-    C --> G[SharePoint]
-    C --> H[Dataverse]
-    C --> I[カスタムAPI]
-    C --> J[Power Platform]
+    C --> H[SharePoint]
+    C --> I[Dataverse]
+    C --> J[カスタムAPI]
+    C --> K[Power Platform]
 
-    D --> K[Teams]
-    D --> L[Web]
-    D --> M[モバイル]
+    D --> L[Teams]
+    D --> M[Web]
+    D --> N[モバイル]
+
+    E --> O[アプリ・ウェブサイト操作]
+    E --> P[自然言語でタスク実行]
 ```
+
+### 2025年9月の重要アップデート
+
+#### Computer Use（コンピュータ使用機能）- パブリックプレビュー
+米国ベースの環境でパブリックプレビュー開始。エージェントが自然言語でタスクを説明するだけで、アプリやウェブサイトを直接操作できる画期的な機能。
+
+**使用例**:
+```
+指示: "この請求書データをERPシステムに入力して"
+
+Copilot Studio Agent:
+1. ブラウザでERPシステムを開く
+2. ログイン
+3. 請求書入力画面に移動
+4. データを自動入力
+5. 保存して確認
+```
+
+#### その他の新機能（2025年9月）
+- **Microsoft 365 Copilot モバイルアプリでのエージェントサポート**: 従量課金およびCopilotチャットユーザー向け
+- **WhatsAppチャンネル**: 正式リリース（全世界27億ユーザーにリーチ可能）
 
 ### 作成プロセス
 
 1. **トピック作成**: 会話のシナリオを定義
 2. **エンティティ設定**: 抽出する情報を指定
-3. **アクション設定**: 外部システム連携
+3. **アクション設定**: 外部システム連携、Computer Use設定
 4. **テスト**: シミュレーターで動作確認
-5. **公開**: Teams、Webサイト等に配置
+5. **公開**: Teams、WhatsApp、Webサイト等に配置
 
 ### 活用例
 
