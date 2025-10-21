@@ -21,8 +21,10 @@
 ### 本編
 - **第1章: Claude** - Claude.ai、Claude API、Claude Code、Projects、Artifacts など
 - **第2章: ChatGPT** - ChatGPT、GPT-4、GPTs、DALL-E、API、Canvas など
-- **第3章: Google** - Gemini、NotebookLM、AI Studio、Vids、Stitch、Labs など
+- **第3章: Google** - Gemini、NotebookLM、AI Studio、Vids、Labs、Jules など
 - **第4章: Microsoft** - Copilot、Azure OpenAI、Designer、GitHub Copilot など
+- **第5章〜第9章**: 保留
+- **第10章: ローカル生成AI** - コーディング特化モデルカタログ（Qwen 2.5 Coder、DeepSeek R1等）
 
 ### 付録
 - **付録A: コーディングツール比較** - 4象限分析による各種コーディングAIの特徴比較
