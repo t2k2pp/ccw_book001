@@ -24,7 +24,10 @@
 - **第3章: Google** - Gemini、NotebookLM、AI Studio、Vids、Labs、Jules など
 - **第4章: Microsoft** - Copilot、Azure OpenAI、Designer、GitHub Copilot など
 - **第5章〜第9章**: 保留
-- **第10章: ローカル生成AI** - コーディング特化モデルカタログ（Qwen 2.5 Coder、DeepSeek R1等）
+- **第10章: ローカル生成AI（言語生成）** - コーディング特化モデルカタログ（Qwen 2.5 Coder、DeepSeek R1等）
+- **第11章: ローカル生成AI（画像生成）** - 画像生成モデルカタログ（FLUX.1、Stable Diffusion XL等）
+- **第12章: ローカル生成AI（動画生成）** - 動画生成モデルカタログ（Hunyuan Video、Mochi 1、CogVideoX等）
+- **第13章: ローカル生成AI（音声合成）** - 音声合成モデルカタログ（F5-TTS、CosyVoice2、Coqui XTTS-v2等）
 
 ### 付録
 - **付録A: コーディングツール比較** - 4象限分析による各種コーディングAIの特徴比較
