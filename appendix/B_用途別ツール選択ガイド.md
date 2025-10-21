@@ -693,23 +693,37 @@ SNS投稿: Designer（サイズ最適化）
 
 ## B.5 最終推奨マトリクス
 
-```mermaid
-quadrant-chart
-    title ツール選択マトリクス（用途 vs 予算）
-    x-axis 低予算 --> 高予算
-    y-axis シンプル --> 複雑
-    quadrant-1 プロフェッショナル
-    quadrant-2 オーバースペック
-    quadrant-3 エントリー
-    quadrant-4 バランス
-    Windsurf: [0.2, 0.6]
-    Bing Chat: [0.1, 0.3]
-    GitHub Copilot: [0.4, 0.5]
-    ChatGPT Plus: [0.5, 0.6]
-    Claude Code: [0.6, 0.8]
-    Microsoft 365 Copilot: [0.8, 0.7]
-    NotebookLM: [0.1, 0.7]
-    Cursor Pro: [0.6, 0.7]
+### ツール選択マトリクス（用途の複雑さ vs 予算）
+
+| ツール | 予算 | 用途の複雑さ | カテゴリ |
+|--------|------|------------|---------|
+| **NotebookLM** | 無料 | ⭐⭐⭐⭐ (複雑) | エントリー（無料で高機能） |
+| **Windsurf** | 無料〜$10 | ⭐⭐⭐ (中程度) | エントリー |
+| **Bing Chat** | 無料 | ⭐ (シンプル) | エントリー |
+| **GitHub Copilot** | $10 | ⭐⭐⭐ (中程度) | バランス |
+| **ChatGPT Plus** | $20 | ⭐⭐⭐ (中程度) | バランス |
+| **Cursor Pro** | $20 | ⭐⭐⭐⭐ (複雑) | バランス |
+| **Claude Code** | 従量課金 | ⭐⭐⭐⭐⭐ (最複雑) | プロフェッショナル |
+| **Microsoft 365 Copilot** | $30/月 | ⭐⭐⭐⭐ (複雑) | プロフェッショナル |
+
+### マトリクス図（テキスト版）
+
+```
+用途の複雑さ
+     ↑
+複雑 │                      ● Claude Code
+     │  ● NotebookLM         (プロ)
+     │   (無料!)
+     │              ● Cursor Pro  ● Microsoft 365
+     │              ● ChatGPT Plus  Copilot (プロ)
+     │      ● Windsurf
+     │      ● GitHub Copilot
+     │
+     │ ● Bing Chat
+簡単 │ (無料)
+     └──────────────────────────────────→
+     低予算              高予算
+     (無料〜$10)        ($20〜$30+)
 ```
 
 ---

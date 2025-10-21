@@ -41,19 +41,30 @@ graph TB
 
 ### Geminiモデルラインナップ（2025年10月最新）
 
-```mermaid
-quadrant-chart
-    title Gemini モデル比較（性能 vs コスト）
-    x-axis 低コスト --> 高コスト
-    y-axis 基本性能 --> 高性能
-    quadrant-1 プレミアム
-    quadrant-2 最高性能
-    quadrant-3 エコノミー
-    quadrant-4 バランス型
-    Gemini 2.5 Flash: [0.25, 0.75]
-    Gemini 2.5 Pro: [0.6, 0.88]
-    Gemini 2.5 Pro Deep Think: [0.85, 0.98]
-    Gemini 2.0 Flash Thinking: [0.35, 0.82]
+### 性能・コスト・機能の比較表
+
+| モデル | 性能 | コスト | コンテキスト | 特徴 |
+|--------|------|--------|------------|------|
+| **Gemini 2.5 Pro Deep Think** | ⭐⭐⭐⭐⭐ | $$$ (最高) | 2M tokens | 並列思考、強化学習 |
+| **Gemini 2.5 Pro** | ⭐⭐⭐⭐⭐ | $$ (中) | 2M tokens | フラッグシップ |
+| **Gemini 2.0 Flash Thinking** | ⭐⭐⭐⭐ | $ (低) | 1M tokens | 推論特化、高速 |
+| **Gemini 2.5 Flash** | ⭐⭐⭐⭐ | $ (最低) | 1M+ tokens | 効率最高、トークン削減 |
+
+### ポジショニングマップ
+
+```
+性能
+ ↑
+高│         ● 2.5 Pro Deep Think (最高性能)
+ │
+ │    ● 2.5 Pro
+ │   (フラッグシップ)
+ │
+ │ ● 2.0 Flash Thinking    ● 2.5 Flash
+ │   (推論+速度)          (効率最高)
+低│
+ └──────────────────────────────→ コスト
+   低                            高
 ```
 
 ### モデル詳細（2025年10月版）
