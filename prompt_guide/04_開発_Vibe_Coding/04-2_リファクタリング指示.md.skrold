@@ -87,7 +87,7 @@ src/services/OrderService.ts の `processOrder` 関数をリファクタリン�
 - 既存のテスト（tests/services/OrderService.test.ts）が全て通ること
 
 【期待する構造】
-```typescript
+\`\`\`typescript
 // メイン関数
 export async function processOrder(orderId: string): Promise<OrderResult> {
   // ここは高レベルの流れのみ
@@ -103,10 +103,9 @@ async function validateOrder(orderId: string): Promise<Order> { ... }
 function calculateOrderTotals(order: Order): OrderCalculations { ... }
 async function saveOrderToDatabase(...): Promise<OrderResult> { ... }
 async function sendNotifications(result: OrderResult): Promise<void> { ... }
-```
+\`\`\`
 
-リファクタリング後、既存テストを実行して全て通ることを確認してください。
-````
+リファクタリング後、既存テストを実行して全て通ることを確認してください。````
 
 ---
 
@@ -141,7 +140,7 @@ async function sendNotifications(result: OrderResult): Promise<void> { ... }
 - 既存のテストが全て通ること
 
 【期待するファイル構成】
-```
+\`\`\`
 [ディレクトリ]/
 ├── ComponentA.tsx
 ├── ComponentB.tsx
@@ -150,10 +149,9 @@ async function sendNotifications(result: OrderResult): Promise<void> { ... }
 ├── types/
 │   └── index.ts
 └── index.ts (re-export用)
-```
+\`\`\`
 
-分割後、全てのimportが正しく解決され、ビルドが成功することを確認してください。
-````
+分割後、全てのimportが正しく解決され、ビルドが成功することを確認してください。````
 
 ---
 

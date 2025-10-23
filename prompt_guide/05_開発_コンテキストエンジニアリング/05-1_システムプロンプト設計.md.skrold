@@ -131,9 +131,9 @@ Reactプロジェクト用のCLAUDE.mdを作成してください。
 [説明]
 
 **Instructions**:
-```
+\`\`\`
 [システムプロンプト全文]
-```
+\`\`\`
 
 **Conversation starters**:
 - [質問例1]

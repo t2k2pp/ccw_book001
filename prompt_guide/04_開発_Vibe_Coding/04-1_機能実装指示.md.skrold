@@ -219,28 +219,28 @@ src/components/Modal.stories.tsx （Storybook）
 
 【API仕様】
 リクエスト:
-```json
+\`\`\`json
 {
   "field1": "value",
   "field2": 123
 }
-```
+\`\`\`
 
 レスポンス（成功時）:
-```json
+\`\`\`json
 {
   "data": { ... },
   "status": "success"
 }
-```
+\`\`\`
 
 レスポンス（エラー時）:
-```json
+\`\`\`json
 {
   "error": "エラーメッセージ",
   "status": "error"
 }
-```
+\`\`\`
 
 【実装要件】
 - TypeScriptで型定義を作成
@@ -255,8 +255,7 @@ src/components/Modal.stories.tsx （Storybook）
 - src/types/[resource].ts: 型定義
 - src/hooks/use[Resource].ts: React hook（ReactやVueの場合）
 
-それでは実装をお願いします。使用例も示してください。
-````
+それでは実装をお願いします。使用例も示してください。````
 
 ---
 
@@ -280,9 +279,9 @@ src/components/Modal.stories.tsx （Storybook）
 - ORM/クライアント: [Prisma / TypeORM / Mongoose / etc.]
 
 【既存スキーマ】
-```sql
+\`\`\`sql
 [既存のテーブル定義]
-```
+\`\`\`
 
 【実装する操作】
 - [操作1]: [説明]
@@ -298,8 +297,7 @@ src/components/Modal.stories.tsx （Storybook）
 - src/models/[resource].ts: モデル定義
 - src/repositories/[resource]Repository.ts: DB操作ロジック
 
-それでは実装をお願いします。
-````
+それでは実装をお願いします。````
 
 ---
 
